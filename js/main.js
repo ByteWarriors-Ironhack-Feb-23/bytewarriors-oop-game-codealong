@@ -19,11 +19,11 @@ class Game {
         //move all obstacles
         setInterval( () => {
             this.obstaclesArr.forEach((obstacleInstance) => {
-                obstacleInstance.moveDown();
-                this.detectCollision(obstacleInstance);
+                obstacleInstance.moveDown(); //move
+                this.detectCollision(obstacleInstance); //detect collision between player and current obstacle
+                this.removeObstacleIfOutside(obstacleInstance); //check if we need to remove current obstacle
             });
         }, 16);
-
     }
     attachEventListeners() {
         document.addEventListener("keydown", (e) => {
@@ -44,6 +44,12 @@ class Game {
             //console.log("game over my fren!");
             window.location.href = "./gameover.html";
           }
+    }
+    removeObstacleIfOutside(obstacleInstance){
+        if(obstacleInstance.positionY < 0){
+            obstacleInstance.obstacleElm.remove(); //remove from the dom
+            this.obstaclesArr.shift(); // remove from the array
+        }
     }
 }
 
