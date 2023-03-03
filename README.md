@@ -19,10 +19,11 @@ coming soon...
 # To-Do
 - [ ] Drop obstacles in random positions
 
+
 # Further Improvements
 
 Fix:
-- [ ] remove obstacles as they go outside board
+- [x] remove obstacles as they go outside board
 - [ ] prevent player from going outside
 
 
