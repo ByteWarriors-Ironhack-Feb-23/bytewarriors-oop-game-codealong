@@ -13,7 +13,7 @@ Move player with arrow keys :)
 
 # Demo
 
-coming soon...
+[https://bytewarriors-ironhack-feb-23.github.io/bytewarriors-oop-game-codealong/](https://bytewarriors-ironhack-feb-23.github.io/bytewarriors-oop-game-codealong/)
 
 
 # To-Do
